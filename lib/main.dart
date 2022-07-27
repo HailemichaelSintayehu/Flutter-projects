@@ -17,6 +17,7 @@ void main() => runApp(
             backgroundColor: Colors.red,
           ),
           body: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               Text("Welcome to Mereb Tech"),
               FlatButton(
@@ -32,6 +33,7 @@ void main() => runApp(
               Container(
                 color: Colors.green,
                 padding: EdgeInsets.all(20.0),
+                margin: EdgeInsets.all(20.0),
                 child: Text('inside container'),
               ),
             ],
