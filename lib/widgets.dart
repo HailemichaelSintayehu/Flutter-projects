@@ -6,7 +6,7 @@ class TaskCard extends StatelessWidget {
   final String? title;
   final String? desc;
   TaskCard({this.title, this.desc});
-
+  @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
@@ -45,6 +45,15 @@ class TaskCard extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+class TodoWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Text('Todo widget'),
     );
   }
 }
