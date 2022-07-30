@@ -18,6 +18,8 @@ dependencies:
   english_words: ^4.0.0 
   google_fonts: ^3.0.1
   flutter_launcher_icons: ^0.9.3
+  sqflite:
+  path:
 
 dev_dependencies:
   flutter_test:

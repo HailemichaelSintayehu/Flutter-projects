@@ -12,7 +12,13 @@ class HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Todo App"),
+        title: Text(
+          "እቅድ አውጣ",
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+        backgroundColor: Colors.pink,
         centerTitle: true,
       ),
       body: SafeArea(
@@ -66,7 +72,11 @@ class HomepageState extends State<Homepage> {
                     height: 60.0,
                     width: 60.0,
                     decoration: BoxDecoration(
-                        color: Color(0xFF7349FE),
+                        gradient: LinearGradient(
+                          colors: [Color(0xFF7349FE), Color(0XFF643FDB)],
+                          begin: Alignment(0.0, -1.0),
+                          end: Alignment(0.0, 1.0),
+                        ),
                         borderRadius: BorderRadius.circular(20.0)),
                     child: Image(
                       image: AssetImage('assets/images/add_icon.png'),
